@@ -1,8 +1,13 @@
 // Home Content
+@import "variables";
 
 .home {
 
   .intro {
+
+    .orbit{
+      border-radius: .75rem;
+    }
 
     h2 {
       padding: 15px;
@@ -58,6 +63,7 @@
       }
 
       .btn {
+        .button(1.75rem, rgb(46, 43, 43), .75rem, white, fit-content, 1rem 2rem);
       }
     }
 
@@ -72,4 +78,41 @@
       }
     }
   }
+  
 }// home
+
+@media @phone{
+ .home{
+   .orbit{
+     width: 100vw;
+   }
+    .space-images .rocket{
+      display: none;
+    }
+    .space-images .sky{
+      display: none;
+    }
+    .space-images .blast{
+      width: 100%;
+    }
+    .walk {
+      flex-direction: column-reverse;
+      width:100%;
+      padding:5px;
+
+      .walk-text {
+        width: 100%;
+
+        .btn {
+          .button(1.75rem, rgb(46, 43, 43), .75rem, white, 100%, 1rem 5rem);
+          text-align: center;
+        }
+      }
+      .walk-img{
+        width:100%;
+        margin: 0 auto;
+      }
+    }
+    
+  }
+}

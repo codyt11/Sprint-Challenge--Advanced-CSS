@@ -1,1 +1,35 @@
 // Navigation code here
+@import "mixins";
+@import "variables";
+
+.navbar{
+    .flex(space-between, 100%, center, 2rem auto);
+    flex-direction: column;
+
+    .title{
+        h1{
+        font-size: 4rem;
+        padding: 1rem;
+        .flex(center,50vw,center,0 auto);
+        }
+    }
+    .nav{
+        .flex(space-around,80%,center, 2rem auto);
+        font-size: 1.75rem;
+        
+        a{
+            flex-direction: row;
+            .flex(space-around, 100%, center, 0 auto);
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+@media @phone{
+    .navbar{
+        .nav{
+            .flex(space-between,90vw,center, 2rem auto);
+        }
+    }
+} 

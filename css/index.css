@@ -267,6 +267,10 @@ footer {
   width: fit-content;
   padding: 1rem 2rem;
 }
+.home .walk .walk-text .btn:hover {
+  background: red;
+  color: black;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
